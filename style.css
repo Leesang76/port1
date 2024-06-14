@@ -3,13 +3,57 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .header {
-    text-align: center;
-    padding: 100px 0;
-    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://via.placeholder.com/1500x1000') no-repeat center center/cover;
     color: white;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.header .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.header .btn:hover {
+    background: #0056b3;
 }
 
 .parallax {
@@ -22,6 +66,7 @@ body, html {
     align-items: center;
     justify-content: center;
     color: white;
+    text-align: center;
 }
 
 .parallax1 {
@@ -37,10 +82,61 @@ body, html {
 }
 
 .content {
-    text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 20px;
+    max-width: 300px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+    background: #0056b3;
 }
 
 footer {

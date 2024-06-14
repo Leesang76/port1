@@ -3,30 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax Portfolio</title>
+    <title>Enhanced Parallax Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <header class="header">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Creating beautiful and functional web experiences.</p>
+        <div class="header-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Creating beautiful and functional web experiences.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
     </header>
-    <section class="parallax parallax1">
+    <section id="about" class="parallax parallax1">
         <div class="content">
             <h2>About Me</h2>
             <p>I'm a passionate web developer.</p>
         </div>
     </section>
-    <section class="parallax parallax2">
+    <section id="projects" class="parallax parallax2">
         <div class="content">
             <h2>Projects</h2>
-            <p>Check out my latest work.</p>
+            <div class="project-gallery">
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of project 1.</p>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of project 2.</p>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    <h3>Project 3</h3>
+                    <p>Description of project 3.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="parallax parallax3">
+    <section id="contact" class="parallax parallax3">
         <div class="content">
             <h2>Contact</h2>
-            <p>Get in touch with me.</p>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
         </div>
     </section>
     <footer>
